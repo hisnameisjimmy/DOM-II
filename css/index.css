@@ -194,6 +194,9 @@ img {
     padding-top: 10px;
   }
 }
+.main-navigation .nav-container .logo-heading {
+  margin-left: 0px;
+}
 @media (max-width: 500px) {
   .main-navigation .nav-container .logo-heading {
     font-size: 3rem;
@@ -236,6 +239,12 @@ img {
 }
 .home .intro h2 {
   margin-top: 20px;
+  transition: font-size 0.2s ease-in-out;
+}
+.home .fun-bus {
+  transition: width 0.2s ease-in-out;
+  margin: 0px auto;
+  display: block;
 }
 .home .content-section {
   margin: 30px 0;
