@@ -68,3 +68,22 @@ const messageToast = (text) => {
 window.addEventListener('resize', (event) => {
     messageToast('Resiiiiiiiiized');
 })
+
+let paragraphs = document.querySelectorAll('p');
+paragraphs.forEach((element) => {
+    element.addEventListener('mouseout', (event) => {
+        event.target.style.backgroundColor = getRandomColor();
+        setTimeout(() => {
+            event.target.style.backgroundColor = "";
+        }, 1000);
+    })
+})
+
+paragraphs.forEach((element) => {
+    element.addEventListener('select', (event) => {
+        selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+        console.log(`${selection}`);
+    })
+})
+
+
